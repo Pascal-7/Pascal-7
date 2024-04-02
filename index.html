@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Faculty Information</title>
+    <style>
+        /* CSS styles go here */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f3f3f3;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        h1, h2, h3, h4 {
+            color: #333;
+            text-align: center;
+        }
+
+        p {
+            color: #666;
+            text-align: justify;
+        }
+
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+
+        input[type="text"], input[type="tel"] {
+            width: calc(100% - 20px);
+            padding: 8px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        footer a {
+            color: #fff;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Faculty Information</h1>
+        <nav>
+            <ul>
+                <li><a href="departments.html">Departments</a></li>
+                <li><a href="timetable.html">Timetables</a></li>
+                <li><a href="pays.html">Payments</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h2>About Our Faculty</h2>
+        <p>Welcome to our Faculty Information page. Here you can find details about our esteemed faculty members.</p>
+        
+        <h3>Our Mission</h3>
+        <p>Our mission is to provide high-quality education through experienced and dedicated faculty members.</p>
+
+        <h4>Enroll Now</h4>
+        <form action="register_form.php" method="post">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="contact">Contact:</label>
+            <input type="tel" id="contact" name="contact">
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <footer>
+        <a href="https://www.techword.com">Visit Our Official Website</a>
+        <p>&copy; 2024 Faculty Information</p>
+    </footer>
+</body>
+</html>
